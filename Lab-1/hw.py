@@ -35,7 +35,7 @@ for _ in range(lines_num):
     all_x_arrays.append(X_points) 
     all_y_arrays.append(Y_points)
     
-
+# print(all_x_arrays[0])
 end_time = t.time()
 time_taken = end_time-start_time
 
@@ -55,6 +55,6 @@ plt.title(f"{lines_num} Lines generated, Time Taken:{time_taken:.5f}s")
 plt.xlabel("X Axis")
 plt.ylabel("Y Axis")
 # plt.grid(True)
-plt.xlim(0, 100)
-plt.ylim(0, 100)
+# plt.xlim(0, 100)
+# plt.ylim(0, 100)
 plt.show()
