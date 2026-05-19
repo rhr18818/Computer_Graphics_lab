@@ -9,9 +9,11 @@ def get_dda_points(x1, y1, x2, y2):
     dy = y2 - y1
     dx = x2 - x1
     
+    #A Single Point
     if dx == 0 and dy == 0: 
         return [x1], [y1]
-        
+    
+    #Vertical Lines   
     if dx == 0:  
         step = 1 if y1 < y2 else -1 
         for y in range(y1, y2 + step, step):
@@ -19,6 +21,7 @@ def get_dda_points(x1, y1, x2, y2):
             y_pixels.append(y)
         return x_pixels, y_pixels
 
+    #Horizontal Lines
     if dy == 0:  
         step = 1 if x1 < x2 else -1 
         for x in range(x1, x2 + step, step):

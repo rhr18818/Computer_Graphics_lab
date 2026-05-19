@@ -16,7 +16,7 @@ def get_bresenham_points(x1, y1, x2, y2):
     step_x = 1 if x1 < x2 else -1
     step_y = 1 if y1 < y2 else -1
     
-    
+    #same as m < 1 || abs(m) < 1
     if dx>dy:
         dS = 2*dy
         dT= 2*(dy-dx)
