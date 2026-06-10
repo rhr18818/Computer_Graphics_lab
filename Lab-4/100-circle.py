@@ -41,11 +41,11 @@ def get_bresenham_circle_points(h, k, r):
 
 
 total_circles = 100
-grid_size = 500   # The size of our graph area
+grid_size = 500  
 max_radius = 60   
 
 
-plt.figure(figsize=(8, 8)) 
+# plt.figure(figsize=(8, 8)) 
 
 
 for i in range(total_circles):
