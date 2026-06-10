@@ -49,12 +49,10 @@ max_radius = 60
 
 
 for i in range(total_circles):
-    # 1. Generate random center (h, k) and a random radius (r)
     h = np.random.randint(0, grid_size)
     k = np.random.randint(0, grid_size)
     r = np.random.randint(5, max_radius) # given min radius 5 
     
-    # pixel for 1 circle
     x_list, y_list = get_bresenham_circle_points(h, k, r)
     
     plt.scatter(x_list, y_list, s=2) 
