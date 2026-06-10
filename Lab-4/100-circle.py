@@ -10,17 +10,17 @@ def get_bresenham_circle_points(h, k, r):
     y = r
     d = 3 - 2 * r
     
-    def plot_8_octants(x_val, y_val):
+    def plot_8_octants(X, Y):
         # (h, k) to shift the circle to wherever we want it
         points = [
-            (h + x_val, k + y_val), 
-            (h - x_val, k + y_val), 
-            (h + x_val, k - y_val), 
-            (h - x_val, k - y_val), 
-            (h + y_val, k + x_val), 
-            (h - y_val, k + x_val), 
-            (h + y_val, k - x_val), 
-            (h - y_val, k - x_val)  
+            (h + X, k + Y), 
+            (h - X, k + Y), 
+            (h + X, k - Y), 
+            (h - X, k - Y), 
+            (h + Y, k + X), 
+            (h - Y, k + X), 
+            (h + Y, k - X), 
+            (h - Y, k - X)  
         ]
         for px, py in points:
             x_pixels.append(px)
