@@ -27,7 +27,7 @@ def get_bresenham_circle_points(h, k, r):
             y_pixels.append(py)
 
     while x <= y:
-        plot_8_octants(x, y)
+        plot_8_octants(x, y) #like setpixel
         
         if d < 0:
             d = d + 4 * x + 6
